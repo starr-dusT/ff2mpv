@@ -11,7 +11,7 @@ def main():
     message = get_message()
     url = message.get("url")
 
-    args = ["mpv", "--no-terminal", "--", url]
+    args = ["mpv", "--title=scr-mpv","--no-terminal", "--", url]
 
     kwargs = {}
     # https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Native_messaging#Closing_the_native_app
